@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <html lang="hun">
+        <meta lang="hu">
 
             <meta name="author" content="Ági">
             <meta name="description" content="Krisztián"
@@ -13,7 +13,9 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-            <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
+            <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+    
             <style>
              body {
                  background-color: #282f5b;
@@ -74,50 +76,10 @@
                  height: 150px;
              }
 
-             .carousel-container{
-                 margin: auto;
-                 width: 60%;
-                 position: relative;
-                 overflow: hidden;
-             }
 
-             .carousel-slide img{
-                 height: 100%;
-                 width: 100%;
-             }
-
-             .carousel-slide {
-                 display: flex;
-                 width: 100%;
-                 height: 500px;
-             }
-             #previousBtn{
-                 position: absolute;
-                 top: 50%;
-                 z-index: 10;
-                 left: 5%;
-                 font-size: 30px;
-                 color: white;
-                 opacity: 0.5;
-                 cursor: pointer;
-             }
-             #nextBtn{
-                 position: absolute;
-                 top: 50%;
-                 z-index: 10;
-                 right: 5%;
-                 font-size: 30px;
-                 color: white;
-                 opacity: 0.5;
-                 cursor: pointer;
-             }
-             .utolso{
-                 margin: 0;
-                 padding: 0;
-             }
 
             </style>
-
+</head>
     <body>
         <header>
             <p class="headerpicture">
@@ -139,17 +101,17 @@
                 </ul>
         </nav>
 
-        <div class="carousel-container">
-            <i class="fas fa-arrow-left" id="previousBtn"></i>
-            <i class="fas fa-arrow-right" id="nextBtn"></i>
+
             <div class="carousel-slide">
-                <img src="borito2.jpg" id="lastClone" alt="">
-                <img src="borito3.jpg" alt="">
-                <img src="borito4.jpg" id="firstClone" alt="">
+                <div><img src="borito2.jpg" id="lastClone" alt="" height="400"></div>
+                <div><img src="borito3.jpg" alt="" height="400"></div>
+                <div><img src="borito4.jpg" id="firstClone" alt="" height="400"></div>
             </div>
         </div>
      
-
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="app.js"></script>
 
         <footer>
