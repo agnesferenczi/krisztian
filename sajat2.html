@@ -5,8 +5,8 @@
         <html lang="hun">
 
             <meta name="author" content="Ági">
-            <meta name="description" content="Krisztián"
-            <meta name="keywords" content="születésnap"
+            <meta name="description" content="Krisztián">
+            <meta name="keywords" content="születésnap">
             <link rel="shortcut icon" href="sziv.png">
             <title>Boldogat szuletesnapot!</title>
 
@@ -18,23 +18,22 @@
             <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
 
-            <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
-            <style>
-             body {
+            <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+			 <style>
+             body{
                  background-color: #282f5b;
-                 margint: 0;
+                 width: 100%;
                  padding: 0;
+                 margin: 0;
                  box-sizing: border-box;
                  font-family: 'Sacramento', cursive;
              }
 
              .headerpicture {
-                 text-align: center;
-                 width: 98.6vw;
-                 display: block;
-                 margin: 0;
-                 padding: 0;;
-             } 
+                 width: 100%;
+                 height: auto;
+             }
 
              nav li {
                  list-style-type: none;
@@ -49,23 +48,23 @@
 
              a:hover {
                  font-weight: normal;
-                 padding: 2px;
-                 margin: 0 2vw;
              }
 
              nav {
-                 width: 98.6vw;
+                 width: 100%;
                  background-color: #d2b04c;
-                 font-size:25px;
-                 height: 30px;
+                 font-size: 15px;
                  text-align: centered;
                  font-weight: bold;
+                 padding: 0;
+                 margin: 0,
              }
 
-             ul {
+            ul {
+                 margin: 0;
                  margin: 0;
                  padding: 0;
-                 display: flex; 
+                 display: flex;
                  align-items: center;
                  justify-content: center;
                  position: sticky;
@@ -74,19 +73,93 @@
              .utolso {
                  background-color: #d2b04c;
                  text-align: center;
-                 width: 98.6vw;
-                 font-size: 2vh;
-                 height: 150px;
+                 font-size: 1rem;
+                padding: 4rem 0;
+                margin: 0;
+             }
+
+             @media only screen and (min-width: 768px) {
+                .headerpicture {
+                 width: 100%;
+                 display: block;
+             }
+
+             nav li {
+                 list-style-type: none;
+                 margin: 0 2vw;
+             }
+
+            nav a{
+                text-decoration: none;
+                color: #282f5b;
+                padding: 2vw;
+             }
+
+             a:hover {
+                 font-weight: normal;
+             }
+
+             nav {
+                 width: 100%;
+                 background-color: #d2b04c;
+                 font-size: 25px;
+                 text-align: centered;
+                 font-weight: bold;
                  padding: 0;
+                 margin: 0,
+             }
+
+            ul {
                  margin: 0;
+                 margin: 0;
+                 padding: 0;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 position: sticky;
              }
 
-             .main{
-	               position: relative;
-	               height: 100%;
-	               width: 100%;
+             @media only screen and (min-width: 1000px) {
+                .headerpicture {
+                 width: 100%;
+                 display: block;
              }
 
+             nav li {
+                 list-style-type: none;
+                 margin: 0 2vw;
+             }
+
+            nav a{
+                text-decoration: none;
+                color: #282f5b;
+                padding: 2vw;
+             }
+
+             a:hover {
+                 font-weight: normal;
+             }
+
+             nav {
+                 width: 100%;
+                 background-color: #d2b04c;
+                 font-size: 25px;
+                 text-align: centered;
+                 font-weight: bold;
+                 padding: 0;
+                 margin: 0,
+             }
+
+            ul {
+                 margin: 0;
+                 margin: 0;
+                 padding: 0;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 position: sticky;
+			}
+             }
 
              .main .gallery{
 	               position: relative;
@@ -95,7 +168,7 @@
 	               margin: auto;
 	               padding: 0px 0;
 	               display: grid;
-	               grid-template-columns: auto auto auto auto; /*i write auto four time because we want four rows*/
+	               grid-template-columns: auto auto auto auto;
 	               grid-gap: 0vh;
 	               grid-auto-flow: dense;
 }
@@ -104,7 +177,6 @@
 	               height: 100%;
 	               width: 100%;
 	               overflow: hidden;
-	               box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9 );
 	               border-radius: 2px;
              }
              .main .gallery .img:first-child{
@@ -159,22 +231,16 @@
 		                 font-size: 0.89em;
 	               }
 	               .main .gallery{
-		                 display: block;
+		                 display: grid;
+						 grid-template-columns: auto auto;
 	               }
-	               .main .gallery .img{: ;n .gallery .img{: ;
-	                   .main .gallery .img img{
-		                     display: block;
-		                     filter: brightness(1) grayscale(0);
-	                   }
                  }
 
-                               </style>
+                </style>
 
     <body>
-        <header>
-            <p class="headerpicture">
-                <img src="tommy.png" alt="centered image" />
-            </p>
+       <header>
+               <img src="tommy.png" alt="centered image" class="headerpicture">
         </header>
 
         <nav>
@@ -279,9 +345,9 @@
 	</div>
 
         <footer>
-            <p class="utolso">
+            <div class="utolso">
                 Szeretlek!
-            </p>
+			</div>
         </footer>
 
 
