@@ -14,13 +14,13 @@
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
             <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
             <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" integrity="sha512-L/EyzxvZCddd652hKB4w2gEaZgCZSOaH0Ia6JoEGysTu27VnWvej5ipuBnru/iDhPWMO0AvwiVd0HHVUHWeDRA==" crossorigin="anonymous" name="button" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" integrity="sha512-L/EyzxvZCddd652hKB4w2gEaZgCZSOaH0Ia6JoEGysTu27VnWvej5ipuBnru/iDhPWMO0AvwiVd0HHVUHWeDRA==" crossorigin="anonymous" name="button"/>
             <style>
              body{
                  background-color: #d2b04c;
                  width: 100%;
                  padding: 0;
-                 margin: 0;
+                 margin: 30px;
                  box-sizing: border-box;
                  font-family: 'Sacramento', cursive;
              }
@@ -119,6 +119,7 @@
             }
              }
 
+
              @media only screen and (min-width: 1000px) {
                 .headerpicture {
                  width: 100%;
@@ -161,16 +162,20 @@
             }
              }
 
-            button{
-                display: relative;
+            button {
                 left: 1420px;
+                right: -1420px;
             }
 
             </style>
     <body>
         <header>
-            <img src="tommy.png" alt="centered image" class="headerpicture">
-     </header>
+            <picture>
+               <source media="(max-width: 768px)" srcset="tommy.png">
+                <source medig="(max-width: 1000px)" srcset="tommy2.jpg">
+                <img src="tommy.png" alt="centered image" class="headerpicture">
+               </picture>
+        </header>
 
             <nav>
                 <ul>
@@ -187,9 +192,9 @@
         </nav>
        
             <div class="carousel-slide">
-                <div><img src="borito3.jpg" alt="" height="380"></div>
-                <div><img src="borito2.jpg" alt="" height="380"></div>
-                <div><img src="borito4.jpg" alt="" height="380"></div>
+                <div><img src="borito3.jpg" alt="" height="380" class="kep1"></div>
+                <div><img src="borito2.jpg" alt="" height="380" class="kep2"></div>
+                <div><img src="borito44.jpg" alt="" height="380" class="kep3"></div>
             </div>
         </div>
      

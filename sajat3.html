@@ -185,7 +185,11 @@
 
     <body>
         <header>
-               <img src="tommy.png" alt="centered image" class="headerpicture">
+            <picture>
+               <source media="(max-width: 768px)" srcset="tommy.png">
+                <source medig="(max-width: 1000px)" srcset="tommy2.jpg">
+                <img src="tommy.png" alt="centered image" class="headerpicture">
+               </picture>
         </header>
 
             <nav>

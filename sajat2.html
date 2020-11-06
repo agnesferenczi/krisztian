@@ -119,6 +119,25 @@
                  position: sticky;
              }
 
+             .main .gallery{
+	               position: relative;
+	               height: auto;
+	               width: 70%;
+	               margin: auto;
+	               padding: 0px 0;
+	               display: grid;
+	               grid-template-columns: auto auto;
+	               grid-gap: 0vh;
+	               grid-auto-flow: dense;
+}
+             .main .gallery .img img{
+	               position: relative;
+	               height: 100%;
+	               width: 100%;
+	               overflow: hidden;
+	               border-radius: 2px;
+             } 
+
              @media only screen and (min-width: 1000px) {
                 .headerpicture {
                  width: 100%;
@@ -209,19 +228,7 @@
 	               filter: brightness(1) grayscale(0);
              }
 
-             @media only screen and (max-width: 768px){
-	               .main h1{
-		                 font-size: 1.8em;
-		                 width: 400px;
-	               }
-	               .main p{
-		                 font-size: 1.2em;
-	               }
-	               .main .gallery{
-		                 display: grid;
-		                 grid-template-columns: auto auto auto;
-	               }
-             }
+
              @media only screen and (max-width: 430px){
 	               .main h1{
 		                 font-size: 1.2em;
@@ -239,8 +246,12 @@
                 </style>
 
     <body>
-       <header>
-               <img src="tommy.png" alt="centered image" class="headerpicture">
+        <header>
+            <picture>
+               <source media="(max-width: 768px)" srcset="tommy.png">
+                <source medig="(max-width: 1000px)" srcset="tommy2.jpg">
+                <img src="tommy.png" alt="centered image" class="headerpicture">
+               </picture>
         </header>
 
         <nav>
@@ -340,7 +351,6 @@
 <div class="img">
 				<img src="image31.JPG" />
 			</div>
-
 		</div>
 	</div>
 
