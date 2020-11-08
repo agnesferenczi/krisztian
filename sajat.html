@@ -14,13 +14,13 @@
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
             <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
             <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" integrity="sha512-L/EyzxvZCddd652hKB4w2gEaZgCZSOaH0Ia6JoEGysTu27VnWvej5ipuBnru/iDhPWMO0AvwiVd0HHVUHWeDRA==" crossorigin="anonymous" name="button"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" integrity="sha512-L/EyzxvZCddd652hKB4w2gEaZgCZSOaH0Ia6JoEGysTu27VnWvej5ipuBnru/iDhPWMO0AvwiVd0HHVUHWeDRA==" crossorigin="anonymous"/>
             <style>
              body{
                  background-color: #d2b04c;
                  width: 100%;
                  padding: 0;
-                 margin: 30px;
+                 margin: 0;
                  box-sizing: border-box;
                  font-family: 'Sacramento', cursive;
              }
@@ -161,12 +161,20 @@
                  position: sticky;
             }
              }
-
-            button {
-                left: 1420px;
-                right: -1420px;
+            
+            .carousel-slide {
+                margin: 0 auto;
             }
 
+            .slick-prev {
+                left: 35px;
+                z-index: 9999;
+            }
+
+            .slick-next {
+                left: 1465px;
+                z-index: 9999;
+            }
             </style>
     <body>
         <header>
@@ -192,9 +200,9 @@
         </nav>
        
             <div class="carousel-slide">
-                <div><img src="borito3.jpg" alt="" height="380" class="kep1"></div>
-                <div><img src="borito2.jpg" alt="" height="380" class="kep2"></div>
-                <div><img src="borito44.jpg" alt="" height="380" class="kep3"></div>
+                <div><img src="borito3.jpg" alt="" height="380"></div>
+                <div><img src="borito2.jpg" alt="" height="380"></div>
+                <div><img src="borito44.jpg" alt="" height="380"></div>
             </div>
         </div>
      

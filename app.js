@@ -39,8 +39,4 @@ $(document).ready(function(){
     ]
   });
 
-  $('.single-item-rtl').slick({
-    rtl: true
-  });
-
   
